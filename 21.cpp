@@ -5,10 +5,9 @@ using namespace std;
 
 int main()
 {   
-	cout << "assaasdsad\n";
 	cout << "21 GAME\n\ngame rules:\n 1-take a card\n 0-don`t take a card\n";
-    srand(time(NULL));
-    int you = 1,ai=1,card,round=1,airand=0;
+    	srand(time(NULL));
+    	int you = 1,ai=1,card,round=1,airand=0;
 	while (ai!=21 || you!=21)
 	{	
 		cout << "ROUND:" << round << "/4\n";
