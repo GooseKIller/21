@@ -19,12 +19,11 @@ int main()
 		switch (you)
 		{	
 		case 0:
-			card = rand() % 9;
-			cout << card<<"\n";
-			you = card;
 			break;
 		case 1:
-			cout << card;
+			card = rand() % 9;
+			cout << card<<"\n";
+			you += card;
 			break;
 		default:
 			cout << "wrong command";
