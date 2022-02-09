@@ -9,8 +9,8 @@ int choise(int you,int tout) {
 	switch (you)
 	{
 	case 0:
-		card = rand() % 10 + 6;
-		return 0;
+		tout=tout
+		return tout;
 		break;
 	case 1:
 		card = rand() % 10 + 6;
