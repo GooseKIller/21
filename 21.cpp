@@ -14,7 +14,6 @@ int main()
 	if (round == 3) {
 			break;
 		}
-		card = rand() % 9;
 		cout << "YOU:"; cin >> youint;//you
 		switch (youint)
 		{	
@@ -22,7 +21,7 @@ int main()
 			cout <<"YOUR card:"<< card << "\n";
 			break;
 		case 1:
-			card = rand() % 9;
+			card = rand() % 9+6;
 			cout << "YOUR card:" << card << "\n";
 			you = you + card;
 			break;
@@ -38,11 +37,7 @@ int main()
 		case 0:
 			break;
 		case 1:
-			card = rand() % 9;
-			ai = ai + card;
-			break;
-		case 2:
-			card = rand() % 9;
+			card = rand() % 9+6;
 			ai = ai + card;
 			break;
 		default:
