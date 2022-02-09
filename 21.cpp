@@ -31,7 +31,7 @@ int main()
 			break;
 		}
 		cout <<"YOU:" << you<<"\n";
-		airand = rand() % 2;
+		airand = rand() % 3;
 		cout << "COMPUTER:"<<airand<< "\n";//compurter
 		switch (airand)
 		{
