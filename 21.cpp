@@ -5,25 +5,25 @@ using namespace std;
 
 int main()
 {   
-	cout << "assaasdsad\n";
-	cout << "21 GAME\n\ngame rules:\n 1-take a card\n 0-don`t take a card\n";
+    cout << "21 GAME\n\ngame rules:\n 1-take a card\n 0-don`t take a card\n";
     srand(time(NULL));
-    int you = 0,ai=0,card,round=1,airand=0;
+    int you = 0,youint,ai=0,card,round=0,airand=0;
 	while (ai!=21 || you!=21)
 	{	
-		cout << "ROUND:" << round << "/4\n";
-		if (round == 4) {
+		cout << "ROUND:" << round+1 << "/4\n";
+	if (round == 3) {
 			break;
 		}
 		card = rand() % 9;
-		cout << "YOU:"; cin >> you;
-		switch (you)
+		cout << "YOU:"; cin >> youint;
+		switch (youint)
 		{	
 		case 0:
-			cout << card<<"\n";
+			cout <<"YOUR card:"<< card << "\n";
 			break;
 		case 1:
 			card = rand() % 9;
+			cout << "YOUR card:" << card << "\n";
 			you = you + card;
 			break;
 		default:
@@ -32,13 +32,16 @@ int main()
 		}
 		cout <<"YOU:" << you<<"\n";
 		airand = rand() % 2;
-		cout << ai << "\n";
 		cout << "COMPUTER:"<<airand<< "\n";
 		switch (airand)
 		{
 		case 0:
 			break;
 		case 1:
+			card = rand() % 9;
+			ai = ai + card;
+			break;
+		case 2:
 			card = rand() % 9;
 			ai = ai + card;
 			break;
