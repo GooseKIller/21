@@ -53,6 +53,5 @@ int main()
 	else if(you>ai && you<=21 || ai>21  && you<=21){
 		cout << "YOU Win!!";
 	}
-return 0;
+return 0;//bruh
 }
-//i will do it better
