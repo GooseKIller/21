@@ -1,8 +1,13 @@
 #include <iostream>
 #include <ctime>
+#include <time.h>
 
 using namespace std;
 
+void delay(int ms){//time
+	int s=clock()+ms;
+	while(clock()<s);
+}
 int choise(int you,int tout) {
 	srand(time(NULL));
 	int card;
@@ -36,9 +41,11 @@ int main()
 		cout << "YOU:"; cin >> youint;//you
 		you=choise(youint, you);
 		cout <<"YOU:" << you<<"\n";
+		delay(2000);
 		airand = rand() % 3;
 		cout << "COMPUTER:"<<airand<< "\n";//compurter
 		ai = choise(airand, ai);
+		delay(2000);
 		cout << "COMPUTER:" << ai<<"\n";
 		round++;
 
