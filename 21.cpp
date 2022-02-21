@@ -3,6 +3,7 @@
 #include <time.h>
 
 using namespace std;
+
 void delay(int ms){//time
 	int s=clock()+ms;
 	while(clock()<s);
