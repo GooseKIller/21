@@ -3,7 +3,7 @@
 #include <time.h>
 
 using namespace std;
-
+/asdd,
 void delay(int ms){//time
 	int s=clock()+ms;
 	while(clock()<s);
