@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void delay(int ms){//time
+void delay(int ms){//time delay
 	int s=clock()+ms;
 	while(clock()<s);
 }
